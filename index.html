@@ -50,9 +50,13 @@
         </div>
         <div id="navbar" class="collapse navbar-collapse">
           <ul class="nav navbar-nav navbar-right">
-            <li><a href="https://goo.gl/forms/bb2X1xFmzWoP8NAA3" target="_blank">Academy</a></li>
-             <li><a href="https://goo.gl/forms/bb2X1xFmzWoP8NAA3" target="_blank">SDP</a></li>
-               <li><a href="https://goo.gl/forms/bb2X1xFmzWoP8NAA3" target="_blank">S2</a></li>
+            <li><a href="https://goo.gl/forms/UXksWpnruI8jqvxt2" target="_blank">Academy</a></li>
+
+             <li><a href="https://goo.gl/forms/UXksWpnruI8jqvxt2" target="_blank">SDP</a></li>
+               <li><a href="https://goo.gl/forms/UXksWpnruI8jqvxt2" target="_blank">S2</a></li>
+                <li><a href="#who">Who We Are</a></li>
+                <li><a href="http://soun.ussoccerda.com/home.php" target="_blank">USDA</a></li>
+
           </ul>
         </div><!--/.nav-collapse -->
       </div>
@@ -60,21 +64,36 @@
 
     <!-- Main jumbotron for a primary marketing message or call to action -->
 
-    <div class="jumbotron">
+    <div id="jumbotron" class="jumbotron">
       <div class="container">
         <h1>Sounders Developmental Academy</h1>
-        <p>A place to LEARN - DEVELOP - and REPORT your HEALTH and PERFORMANCE feedback.</p>
-        <p><a class="btn btn-danger btn-lg" href="#stay-involved" role="button">LEARN &raquo;</a></p>
-        <img src="images/sounderslogo.png" title="Sounders FC", alt="Sounders FC">
-      </div>
-    </div>
+        <p>LEARN, DEVELOP, and REPORT your WELLNESS and PERFORMANCE.</p>
+        <p><a class="btn btn-danger btn-lg" role="button" data-toggle="modal" data-target="#myModal">LEARN &raquo;</a></p>
 
-    <div class="container homepage">
-      <img src="images/u.s._sda.png" alt="SOUNDERS Academy" title="SOUNDERS Academy" 
+        <!-- Modal -->
+        <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+               <button type="button" class="close btn btn-danger" data-dismiss="modal" aria-hidden="true">x</button>
+<<<<<<< HEAD
+               <ifram></iframe>
+=======
+               <iframe></iframe>
+>>>>>>> origin/master
+            </div>
+          </div>
+        </div>
+          <img src="images/sounderslogo.png" title="Sounders FC", alt="Sounders FC">
+        </div>
+      </div>
+
+    <div id="who">
+      <div class="container homepage">
+      <img src="images/us_sda.png" alt="SOUNDERS Academy" title="SOUNDERS Academy" 
       style="width:60px;height:120px;">
       <h2>Who We Are</h2>
       <hr>
-      <p>We are <a href="http://www.soundersfc.com/academy" target="_blank"> SOUNDERS FC Developmental Academy</a>. The Sounders FC Academy is where some of the nations most talented soccer players come to train and play with the goal of signing for Seattle Sounders FC and earning a professional contract.</p>
+      <p>We are <a href="http://www.soundersfc.com/academy" target="_blank"> SOUNDERS FC Developmental Academy</a>. The Sounders FC Academy is where some of the nations most talented soccer players come to train and play with the goal of signing with Seattle Sounders FC and earning a professional contract.</p>
     </div>
 
     <div id="stay-involved">
@@ -83,21 +102,22 @@
         <hr>
         <div class="row">
           <div class="col-md-4">
-              <i class="fa fa-futbol-o fa-3x" aria-hidden="true"></i>
-            <h3>Strength</h3>
+              <i class="fa fa-heartbeat fa-4x" aria-hidden="true"></i>
+            <h3>Physical</h3>
             <p>In this section we will provide information and links to programs that will work on developing strength for Soccer.</p>
-            <p><a class="btn btn-default" href="strength.html" role="button">Start Learning &raquo;</a></p>
+            <p><a class="btn btn-default" href="#" role="button">Start Learning &raquo;</a></p>
           </div>
           <div class="col-md-4">
                <i class="fa fa-futbol-o fa-spin fa-4x fa-fw"></i>
               <span class="sr-only">Loading...</span>
-            <h3>Speed</h3>
-            <p>In this section we will provide information and links to programs that will work on developing speed for Soccer. </p>
-            <p><a class="btn btn-default" href="#" role="button">Start Learning &raquo;</a></p>
+
+            <h3>Mental</h3>
+              <p>In this section we will provide information and links to programs that will work on developing speed for Soccer. </p>
+              <p><a class="btn btn-default" href="#" role="button">Start Learning &raquo;</a></p>
          </div>
           <div class="col-md-4">
-            <i class="fa fa-futbol-o fa-3x" aria-hidden="true"></i>
-            <h3>Agility</h3>
+            <i class="fa fa-bed fa-4x" aria-hidden="true"></i>
+            <h3>Recovery</h3>
             <p>In this section we will provide information and links to programs that will work on developing agility for Soccer.</p>
             <p><a class="btn btn-default" href="#" role="button">Start Learning &raquo;</a></p>
           </div>
@@ -105,12 +125,19 @@
        </div> <!-- /container -->
      </div>
 
-    
+
 
     <footer>
     <div class="container">  
         <p><img src="images/sounderslogo.png"></p>
+      </div>
+      <div id="back-to-top">
+        <a href="#jumbotron"><i class="fa fa-4x fa-chevron-circle-up"></i></a>
+      </div>
     </footer>
+
+   
+
    
 
 
@@ -119,6 +146,7 @@
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
      <script src="js/bootstrap.min.js"></script>
+     <script src="js/smoothscroll.js"></script>
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>
   </body>
